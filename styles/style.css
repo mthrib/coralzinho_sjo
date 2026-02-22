@@ -139,7 +139,7 @@ nav a:hover {
 
 .grid-galeria img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 14px;
     transition: 0.4s ease;
@@ -200,4 +200,5 @@ footer p {
     .hero h1 {
         font-size: 2.3rem;
     }
+
 }
