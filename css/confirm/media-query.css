@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+:root {
+    --bg: #FBF3D6;
+    --bg-section: #ffffff;
+    --primary: #8D472B;
+    --accent: #D87C30;
+    --text: #3e3e3e;
+
+    --font-p: "Funnel Display", sans-serif;
+    --font-h: "Patua One", serif;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* header */
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right-header {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .right-header a {
+        font-size: 1.4em;
+    }
+
+    .box {
+        width: 500px;
+    }
+ 
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    /* header */
+    header{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left-header img {
+        width: 150px;
+    }
+
+    .right-header {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+
+    .right-header a {
+        font-size: 1.7em;
+    }
+
+    .right-header a:hover {
+        transition: .3s;
+        color: var(--bg);
+        text-decoration: underline;
+    }
+
+    .box {
+        width: 600px;
+    }
+    
+
+}

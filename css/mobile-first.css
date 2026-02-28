@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+:root {
+    --bg: #FBF3D6;
+    --bg-section: #ffffff;
+    --primary: #8D472B;
+    --accent: #D87C30;
+    --text: #3e3e3e;
+
+    --font-p: "Funnel Display", sans-serif;
+    --font-h: "Patua One", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Isso "tranca" a rolagem lateral no celular */
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--font-p);
+    background: var(--bg);
+    overflow-x: hidden; /* segurança contra overflow */
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: var(--primary);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.left-header img {
+    width: 90px;
+}
+
+.right-header {
+    margin-top: 10px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: var(--bg-section);
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    width: 100%;
+}
+
+/* ================= INTRO ================= */
+
+#intro {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+#intro h1 {
+    font-family: var(--font-h);
+    color: var(--accent);
+    font-size: 2.3em;
+}
+
+#intro p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: var(--text);
+}
+
+/* ================= HISTORIA ================= */
+
+.historia,
+#historia {
+    padding: 40px 20px;
+}
+
+.card,
+#historia .box {
+    background: var(--bg-section);
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+
+#historia .box {
+    height: auto;
+}
+
+.box h1,
+.card h2 {
+    font-family: var(--font-h);
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.box p,
+.card p {
+    color: var(--text);
+    font-size: 1em;
+}
+
+.imagem,
+.card-img {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img,
+.card-img img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* ================= GALERIA ================= */
+
+#sec-fotos {
+    padding: 40px 20px;
+}
+
+#sec-fotos h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--font-h);
+    color: var(--accent);
+    font-size: 2em;
+}
+
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+.foto {
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 8px 5px 16px rgba(0,0,0,0.300);
+
+
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: var(--bg-section);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contato a {
+    color: var(--primary);
+    font-size: 2em;
+}
+
+footer p {
+    margin-top: 20px;
+    color: var(--text);
+}
